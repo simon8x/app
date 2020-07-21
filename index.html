@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mimuju - edTech</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/materialize.css">
+
+ <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  
+  <!--Import Google Icon Font-->
+  <link href="css/material-icons.css" rel="stylesheet">
+</head>
+
+<body class="cuerpo">
+
+
+	<div class="row no-margen">
+		<div class="col s12 m4 l4">
+			<ul class="collection with-header">
+        <li class="collection-header">
+        	<h4 class="truncate"><i class="material-icons">class</i> Clases</h4>
+        </li>
+
+        <a href="mmj-docente-clases-dashboard-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">class</i>
+              </span>
+              Dashboard Clases
+            </span>                    
+          </li>
+        </a>        
+
+        <li class="divider"></li>
+        
+        <a href="mmj-docente-clase-crear-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">class</i>
+              </span>
+              Crear Clase
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-clase-editar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">class</i>
+              </span>
+              Editar Clase
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-clase-dictar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">class</i>
+              </span>
+              Dictar Clase
+            </span>                    
+          </li>
+        </a>
+      </ul>
+		</div>
+
+
+		<div class="col s12 m4 l4">
+			<ul class="collection with-header">
+        <li class="collection-header">
+        	<h4 class="truncate"><i class="material-icons">spellcheck</i> Tareas</h4>
+        </li>
+
+        <a href="mmj-docente-tareas-dashboard-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">spellcheck</i>
+              </span>
+              Dashboard Tareas
+            </span>                    
+          </li>
+        </a>
+
+        <li class="divider"></li>
+
+        <a href="mmj-docente-tarea-crear-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">spellcheck</i>
+              </span>
+              Crear Tarea
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-tarea-editar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">spellcheck</i>
+              </span>
+              Editar Tarea
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-tarea-revisar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">spellcheck</i>
+              </span>
+              Revisar Tarea
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+
+
+      </ul>
+		</div>
+
+
+		<div class="col s12 m4 l4">
+			<ul class="collection with-header">
+        <li class="collection-header">
+        	<h4 class="truncate"><i class="material-icons">mail</i> Mensajes</h4>
+        </li>
+
+        <a href="mmj-docente-mensajes-dashboard-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">mail</i>
+              </span>
+              Dashboard Mensajes
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-mensaje-crear-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">mail</i>
+              </span>
+              Crear Mensaje
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-mensaje-editar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">mail</i>
+              </span>
+              Editar Mensaje
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-mensaje-revisar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">mail</i>
+              </span>
+              Revisar Mensaje
+            </span>                    
+          </li>
+        </a>
+
+      </ul>
+		</div>
+
+	</div>
+	<div class="row no-margen">
+
+		<div class="col s12 m4 l4">
+			<ul class="collection with-header">
+        <li class="collection-header">
+        	<h4 class="truncate"><i class="material-icons">account_circle</i> Perfil</h4>
+        </li>
+
+        <a href="mmj-docente-perfil-ver-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">account_circle</i>
+              </span>
+              Ver Perfil
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-perfil-crear-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">account_circle</i>
+              </span>
+              Crear Perfil
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-perfil-editar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">account_circle</i>
+              </span>
+              Editar Perfil
+            </span>                    
+          </li>
+        </a>
+
+      </ul>
+		</div>
+
+		<div class="col s12 m4 l4">
+			<ul class="collection with-header">
+        <li class="collection-header">
+        	<h4 class="truncate"><i class="material-icons">supervisor_account</i> Aulas</h4>
+        </li>
+
+        <a href="mmj-docente-aulas-ver-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">supervisor_account</i>
+              </span>
+              Ver Aulas
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-aula-crear-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">supervisor_account</i>
+              </span>
+              Crear Aula
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-aula-editar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">supervisor_account</i>
+              </span>
+              Editar Aula
+            </span>                    
+          </li>
+        </a>
+
+        <li class="divider"></li>
+
+        <a href="mmj-docente-alumnos-ver-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">list</i>
+              </span>
+              Listado de Alumnos
+            </span>                    
+          </li>
+        </a>
+
+        <li class="divider"></li>
+
+        <a href="mmj-docente-alumno-ver-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">account_box</i>
+              </span>
+              Datos del alumno
+            </span>                    
+          </li>
+        </a>
+
+      </ul>
+		</div>
+
+		<div class="col s12 m4 l4">
+			<ul class="collection with-header">
+        <li class="collection-header">
+        	<h4 class="truncate"><i class="material-icons">collections_bookmark</i> Asignaturas</h4>
+        </li>
+
+        <a href="mmj-docente-asignaturas-ver-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">collections_bookmark</i>
+              </span>
+              Ver Asignaturas
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-asignatura-crear-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">collections_bookmark</i>
+              </span>
+              Crear Asignatura
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-docente-asignatura-editar-v1.html" class="black-text">
+        	<li class="collection-item">
+          	<span class="truncate">
+            	<span>
+              	<span class="secondary-content">
+                	<i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+              	<i class="tiny material-icons">collections_bookmark</i>
+              </span>
+              Editar Asignatura
+            </span>                    
+          </li>
+        </a>
+
+      </ul>
+		</div>
+
+
+    <div class="col s12 m4 l4">
+      <ul class="collection with-header">
+        <li class="collection-header">
+          <h4 class="truncate"><i class="material-icons">supervised_user_circle</i> Tutor</h4>
+        </li>
+
+        <a href="mmj-tutor-timeline-feed-v1.html" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">list</i>
+              </span>
+              Timeline feed
+            </span>                    
+          </li>
+        </a>        
+
+        <li class="divider"></li>
+        
+        <a href="#" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">class</i>
+              </span>
+              FALTA
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="#" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">class</i>
+              </span>
+              FALTA
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="#" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">class</i>
+              </span>
+              FALTA
+            </span>                    
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="col s12 m4 l4">
+      <ul class="collection with-header">
+        <li class="collection-header">
+          <h4 class="truncate"><i class="material-icons">event_seat</i> Directivo</h4>
+        </li>
+
+        <a href="mmj-directivo-dashboard-home-v1.html" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">home</i>
+              </span>
+              dashboard directivo
+            </span>                    
+          </li>
+        </a>        
+
+        <li class="divider"></li>
+        
+        <a href="mmj-directivo-seguir-clases-v1.html" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">visibility</i>
+              </span>
+              Revisar clases
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="mmj-directivo-seguir-tareas-v1.html" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">visibility</i>
+              </span>
+              Revisar tareas
+            </span>                    
+          </li>
+        </a>
+        
+        <li class="divider"></li>
+
+        <a href="#" class="black-text">
+          <li class="collection-item">
+            <span class="truncate">
+              <span>
+                <span class="secondary-content">
+                  <i class="material-icons">near_me</i>
+                </span>
+              </span> 
+              <span class="grey-darken-4-text">
+                <i class="tiny material-icons">class</i>
+              </span>
+              FALTA
+            </span>                    
+          </li>
+        </a>
+      </ul>
+    </div>
+
+
+
+	</div>
+
+
+</body>

@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mimuju - edTech</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/materialize.css">
+
+ <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  
+  <!--Import Google Icon Font-->
+  <link href="css/material-icons.css" rel="stylesheet">
+</head>
+
+<body class="cuerpo">
+
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo logo-topbar">
+        <img src="images/mmj-logo-white.png">
+      </a>
+
+      <span class="right truncate ttl-calc-nombre-escuela-topbar">
+        EEP N°444 Roberto Daniel Pedro de Elizalde Rodriguez Rodriguez Rodriguez Rodriguez
+      </span>
+
+
+      <!-- inicio lista de enlaces del menú arriba derecha -->
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="user-view">
+            <div class="background logo-menu">
+              <img class="responsive-img" src="images/mmjtxt-grey-opt.png">
+            </div>
+            <a href="mmj-docente-perfil-ver-v1.html" class="valign-wrapper">
+              <img class="circle avatar-menu" src="images/no-user-avatar.png">
+              <h6 class="black-text name truncate">
+                <strong>Manuela Vargas</strong><br>Ajustes<span>
+              </span>
+              </h6>
+              
+            </a>
+          </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a class="waves-effect" href="mmj-docente-clases-dashboard-v1.html">
+            <i class="material-icons">class</i>Mis Clases
+          </a>
+        </li>
+        <li>
+          <a class="waves-effect" href="mmj-docente-tareas-dashboard-v1.html">
+            <i class="material-icons">spellcheck</i>Mis Tareas
+          </a>
+        </li>
+        <li>
+          <a class="waves-effect" href="mmj-docente-mensajes-dashboard-v1.html">
+            <i class="material-icons">mail</i>Mis Mensajes
+          </a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a class="waves-effect" href="mmj-docente-alumnos-tomarasistencia-v1.html">
+            <i class="material-icons">pan_tool</i>Asistencias
+          </a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a class="waves-effect" href="mmj-docente-aulas-ver-v1.html">
+            <i class="material-icons">supervisor_account</i>Mis Aulas
+          </a>
+        </li>
+        <li>
+          <a href="mmj-docente-asignaturas-ver-v1.html">
+            <i class="material-icons">turned_in</i>Mis Asignaturas
+          </a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a href="index.html">
+            <i class="material-icons">power_settings_new</i>Cerrar Sesión
+          </a>
+        </li>
+      </ul>
+      <!-- fin lista de enlaces del menú arriba derecha -->
+      <!-- inicio hamburguesa del menú arriba derecha -->
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+        <i class="material-icons">menu</i>
+      </a>
+      <!-- inicio hamburguesa del menú arriba derecha -->
+
+    </div>
+<!--
+    <div class="nav-content tiratabs">
+      <div class="row no-margen">
+        <div class="col l1 m2 s2 center no-padding">
+          <div class="row header-tabs">
+            <div class="col s12 center single-tab activa">
+              <a href="mmj-docente-stats-dashboard-v1.html">
+              <div class="cont-tab">
+                <div class="icono">
+                  <i class="tiny material-icons">visibility</i>
+                </div>
+                <div class="text-icn truncate falso-texto">
+                  S
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>        
+        <div class="col l11 m10 s10 no-padding">
+          <div class="row header-tabs">
+            <div class="col s4 center single-tab">
+              <a href="mmj-docente-clases-dashboard-v1.html">
+                <div class="cont-tab">
+                  <div class="icono">
+                    <i class="tiny material-icons">class</i>
+                  </div>
+                  <div class="text-icn truncate">
+                    Clases
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col s4 center single-tab">
+              <a href="mmj-docente-tareas-dashboard-v1.html">
+                <div class="cont-tab">
+                  <div class="icono">
+                    <i class="material-icons">spellcheck</i>
+                  </div>
+                  <div class="text-icn truncate">
+                    Tareas
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col s4 center single-tab">
+              <a href="mmj-docente-mensajes-dashboard-v1.html">
+                <div class="cont-tab">
+                  <div class="icono">
+                    <i class="material-icons">email</i>
+                  </div>
+                  <div class="text-icn truncate">
+                    Mensajes
+                  </div>
+                </div>
+              </a>
+            </div>      
+          </div>          
+        </div>
+
+
+      </div>
+    </div>
+-->
+  </nav>
+
+  <div class="row grey lighten-5 pad-tab-in">
+
+      <div class="col s12 cont-ppal">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <!-- inicio color clase sin vencer encabezado clase -->    
+            <div class="collapsible-header tooltipped grey lighten-5" data-position="top" data-delay="150" data-tooltip="Ver Clase">
+              <span class="secondary-content fecha-sin-vencer">
+                <a href="#!"><i class="material-icons">
+                  settings
+                </i></a>
+              </span>
+              <div class="truncate">
+                <span class="icono-tarea sin-vencer">
+                  <i class="material-icons">assessment</i>
+                </span>
+                <!-- título de la tarea  -->  
+                <span class="title black-text" id="mostrando-seleccionado">
+                  Resumen
+                  <!-- <strong><span class="nombre_asignatura">[Matemática]</span> Operaciones</strong>
+                </span> -->
+                <span class="etiqueta">Mostrando</span>
+              </div>
+            </div>
+            <!-- fin color clase sin vencer encabezado clase --> 
+            <!-- inicio cuerpo clase --> 
+            <div class="collapsible-body white no-padding clases">
+
+              <div class="collection">
+                <a href="#!" class="collection-item active">Resumen</a>
+                <a href="#!" class="collection-item">1°</a>
+                <a href="#!" class="collection-item">2°</a>
+                <a href="#!" class="collection-item">3°</a>
+                <a href="#!" class="collection-item">4°</a>
+                <a href="#!" class="collection-item">5°</a>
+                <a href="#!" class="collection-item">6°</a>
+                <a href="#!" class="collection-item">7°</a>
+                <a href="#!" class="collection-item">1er Ciclo</a>
+                <a href="#!" class="collection-item">2do Ciclo</a>
+                <a href="#!" class="collection-item">3er Ciclo</a>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <!--
+    <div class="row">
+
+      <div class="col l4 m5 s12 no-padding">
+        <span class="lbl-dropdo">Seleccione asignatura</span>      
+        
+        <ul>
+          <li>
+            <i class="material-icons left no-margen icn-dropdo">class</i>
+            <a class='selector-materia dropdown-trigger waves-effect waves-light btn-small truncate' href='#' data-activates='dropdown-asignaturas'>Matemáticas<i class="material-icons right">keyboard_arrow_down</i></a>
+          </li>
+        </ul>  
+          
+        
+        <ul id='dropdown-asignaturas' class='dropdown-content txt-dropdo'>
+          <li>
+            <a href="#!" onclick="mostrar_asignaturas()">Todas</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!" onclick="ocultar_asignaturas()">Matemáticas</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!" onclick="ocultar_asignaturas()">Lengua</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!" onclick="ocultar_asignaturas()">Cs. Sociales</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!" onclick="ocultar_asignaturas()">Cs. Naturales</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!" onclick="ocultar_asignaturas()">Formación ética y ciudadana</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!" onclick="ocultar_asignaturas()">Tecnología</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col l8 m7 s12 no-padding">
+        
+        <form action="#" class="filtro-temas">
+          <span class="cada-filtro">
+            <input class="with-gap" name="group1" type="radio" id="todos-los-temas" checked/>
+            <label for="todos-los-temas" id="todos">Todos(25)</label>
+          </span>
+          <span class="cada-filtro">
+            <input class="with-gap" name="group1" type="radio" id="dictados" />
+            <label for="dictados">Dictados(5)</label>
+          </span>  
+          <span class="cada-filtro">  
+            <input class="with-gap" name="group1" type="radio" id="sindictar"  />
+            <label for="sindictar">Sin Dictar(20)</label>
+          </span>  
+        </form>
+
+      </div>
+    </div>
+
+                      -->
+
+      <div class="row">
+      <!-- 1er grado -->
+
+
+
+          <!-- inicio un grado -->
+          <div class="col s12 m6 l4 post-col">
+          
+          <a href="mmj-directivo-seguir-clases-v1.html" class="sumary-class-link">
+          
+          
+            <div class="card tarjeta-post  grey-text text-darken-4">
+              <!-- encabezado post-->
+              <div class="hover-clase">
+                <i class="material-icons medium">find_in_page</i>
+                <p class="white">Seguimiento</p>
+              </div>
+
+
+
+              <div class="encabezado-post grey lighten-5">
+
+                <span class="elemento-hdr grado-nombre">
+                  <span>1°A</span>
+                </span>
+
+                <span class="elemento-hdr doc-nombre truncate">
+                  <span>Jacinta Pichimahuida de los Druidas Amigos de Matías</span>
+                </span>
+
+                <span class="elemento-hdr right grado-asistencia">
+                  <i class="material-icons">pan_tool</i>
+                  <span>100%</span>
+                </span>
+
+              </div>
+
+              <!-- cuerpo post-->
+              <div class="cuerpo-aula">
+
+
+                <div class="renglon-resumen">
+                  <span class="elemento-hdr icon-rsm">
+                    <i class="material-icons">class</i>
+                  </span>
+
+                  <div class="elem-renglon-resumen descrip-rsm">
+                    <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                    <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                  </div>
+                </div>
+                <div class="renglon-resumen">
+                  <span class="elemento-hdr icon-rsm">
+                    <i class="material-icons">home</i>
+                  </span>
+
+                  <div class="elem-renglon-resumen descrip-rsm">
+                    <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                    <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                  </div>
+                </div>
+                <div class="renglon-resumen">
+                  <span class="elemento-hdr icon-rsm">
+                    <i class="material-icons">mail</i>
+                  </span>
+
+                  <div class="elem-renglon-resumen descrip-rsm">
+                    <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                    <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </a>
+
+          </div>
+          <!-- fin un grado -->
+        
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>1°B</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Romualda Mahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>98%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>1°C</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Matías el Maestre de Trotamundo</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>97%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+      <!-- 2do grado -->
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>2°A</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Jacinta Pichimahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>100%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>2°B</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Romualda Mahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>98%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>2°C</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Matías el Maestre de Trotamundo</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>97%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->        
+      <!-- 3er grado -->
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>3°A</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Jacinta Pichimahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>100%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>3°B</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Romualda Mahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>98%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>3°C</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Matías el Maestre de Trotamundo</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>97%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado --> 
+      <!-- 4to grado -->
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>4°A</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Jacinta Pichimahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>100%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>4°B</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Romualda Mahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>98%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>4°C</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Matías el Maestre de Trotamundo</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>97%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado --> 
+      <!-- 5to grado -->
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>5°A</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Jacinta Pichimahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>100%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>5°B</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Romualda Mahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>98%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>5°C</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Matías el Maestre de Trotamundo</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>97%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado --> 
+      <!-- 6to grado -->
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>6°A</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Jacinta Pichimahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>100%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>6°B</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Romualda Mahuida de los Druidas Amigos de Matías</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>98%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado -->
+
+        <!-- inicio un grado -->
+        <div class="col s12 m6 l4 post-col">
+          <div class="card tarjeta-post">
+            <!-- encabezado post-->
+
+            <div class="encabezado-post grey lighten-5">
+
+              <span class="elemento-hdr grado-nombre">
+                <span>6°C</span>
+              </span>
+
+              <span class="elemento-hdr doc-nombre truncate">
+                <span>Matías el Maestre de Trotamundo</span>
+              </span>
+
+              <span class="elemento-hdr right grado-asistencia">
+                <i class="material-icons">pan_tool</i>
+                <span>97%</span>
+              </span>
+
+            </div>
+
+
+            <!-- cuerpo post-->
+            <div class="cuerpo-aula">
+
+
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">class</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 clases hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 CLASES (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">home</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Tareas hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Tareas (esta semana)</span>
+                </div>
+              </div>
+              <div class="renglon-resumen">
+                <span class="elemento-hdr icon-rsm">
+                  <i class="material-icons">mail</i>
+                </span>
+
+                <div class="elem-renglon-resumen descrip-rsm">
+                  <span class="ttl-rsm truncate grey-text text-darken-3">3 Comunicados hoy</span>
+                  <span class="mtdt-rsm truncate grey-text text-darken-1">22 Comunicados (esta semana)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- fin un grado --> 
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+
+<!-- mostrar ocultar etiqueta asignatura en listado de clases -->
+<script type="text/javascript">
+  function mostrar_asignaturas(){
+    var x = document.getElementsByClassName("nombre_asignatura");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "unset";
+    } 
+  }
+
+  function ocultar_asignaturas(){
+    var x = document.getElementsByClassName("nombre_asignatura");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    } 
+  }
+</script>
+
+
+
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
+  });
+</script>
+
+<script type="text/javascript">
+  $('.dropdown-trigger').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      cpmtrainWidth: false,
+      hover: false,
+      gutter: 0,
+    }
+  );
+</script>
+
+<script type="text/javascript">
+  $(".button-collapse").sideNav();
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      onOpen: function(el) {  }, // A function to be called when sideNav is opened
+      onClose: function(el) {  }, // A function to be called when sideNav is closed
+    }
+  );
+</script>
+</html>
